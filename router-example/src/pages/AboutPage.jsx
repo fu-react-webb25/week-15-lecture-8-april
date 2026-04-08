@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const AboutPage = () => {
     const pokemons = [
         'Bulbasaur',
@@ -8,11 +10,11 @@ const AboutPage = () => {
     return (
         <section>
             <h2>AboutPage</h2>
-            {/* {
+            {
                 pokemons.map((pokemon, index) => {
-                    return <p key={ index } to={`/about/${pokemon}`}>{pokemon}</p>
+                    return <Link className="nav-link" key={ index } to={`/about/${pokemon}`}>{pokemon}</Link>
                 })
-            } */}
+            }
         </section>
     )
 }
